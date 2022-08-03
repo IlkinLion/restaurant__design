@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+header {
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    background: #100F0F;
+    height: 90px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo {
+    font-size: 28px;
+    line-height: 80px;
+    padding: 0 100px;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+nav ul li a {
+    text-decoration-line: none;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a .active, a:hover {
+    background: radial-gradient(135px, orangered, #411C04);
+    transition: .5s;
+}
+.checkbtn {
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+.nav--main {
+    width: 100%;
+    height: 620px;
+    background: url(../image/table&meals.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav--main h1 {
+    text-transform: capitalize;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.nav--main span {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.button-two {
+    width: 270px;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.button-two button {
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+}
+.button-two button:hover {
+    background: radial-gradient(135px, orangered, #411C04);
+}
+section {
+    width: 100%;
+    height: 1600px;
+    background-color: #100F0F;
+    position: absolute;
+    top: 75vh;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.section--one {
+    width: 100%;
+    height: 150px;
+    background-color: #ffffff;
+    top: 0;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.discover {
+    width: 20%;
+    height: 20vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(55%);
+    color: #100F0F;
+    font-weight: 600;
+    font-size: 26px;
+}
+.section--one--right {
+    width: 40%;
+    height: 20vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #100F0F;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: justify;
+}
+.section--two {
+    width: 100%;
+    height: 850px;
+    background-color: transparent;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 30;
+    transform: translateY(-260px);
+}
+.section--two h2 {
+    transform: translateY(38px);
+    text-align: center;
+    font-size: 24px;
+}
+section .meals {
+    width: 75%;
+    height: 250px;
+    background-color: transparent;
+    transform: translateY(40px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+section .meals .information {
+    width: 50%;
+    text-align: right;
+    margin-right: 15px;
+}
+section .meals .information h3 {
+    font-size: 22px;
+}
+section .meals .picture {
+    width: 50%;
+}
+section .meals .picture img {
+    width: 400px;
+    height: 200px;
+}
+.section--three {
+    width: 100%;
+    height: 250px;
+    background: url(../image/bar.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    transform: translateY(190%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.book--a--table button {
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+}
+.book--a--table button:hover {
+    background: radial-gradient(135px, orangered, #411C04);
+}
+.section--four {
+    width: 90%;
+    height: 300px;
+    background-color: transparent;
+    transform: translateY(500px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #100F0F;
+}
+.section--four h2 {
+    font-size: 28px;
+    text-transform: capitalize;
+    color: #ffffff;
+    transform: translateY(-390%);
+    align-items: center;
+    justify-content: center;
+}
+.section--four .cook {
+    width: 100%;
+    height: 250px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+}
+.man {
+    width: 32%;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.man:hover {
+    margin-top: -10px;
+}
+.sauce--meal {
+    width: 40%;
+    height: 100%;
+    background: url(../image/sauce&meal.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.carrot--man {
+    width: 40%;
+    height: 100%;
+    background: url(../image/carrot@man.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.simple--man {
+    width: 40%;
+    height: 100%;
+    background: url(../image/simple&man.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+#cook--information {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    transform: translateX(66%);
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#cook--information h3 {
+    font-weight: 600;
+}
+#cook--information span {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+footer {
+    width: 100%;
+    height: 380px;
+    background-color: #100F0F; 
+    transform: translateY(500%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+}
+.footer--one {
+    width: 70%;
+    height: 340px;
+    background-color: transparent; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: pre;
+    line-height: 22px;
+}
+.footer--one--main {
+    width: 40%;
+    height: 270px;
+    background-color: transparent;
+    margin: 0 20px 0 20px;
+}
+.footer--one--main h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.footer--two {
+    width: 70%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+@media (max-width:768px) {
+    .container {
+        width: 100%;
+    }
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+        background: radial-gradient(135px, orangered, #411C04);
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        color: #ffffff;
+    }
+    .section--two .meals {
+        margin-right: 120px;
+    }
+    .section--two .information {
+        width: 100%;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    .section--two .meals .picture {
+        transform: translateX(-10%);
+    }
+    .section--two .meals .picture img {
+        width: 280px;
+    }
+    .section--two .meals .information {
+        justify-content: flex-start;
+        transform: translateX(-7%);
+    }
+    .section--four .cook {
+        width: 240%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .section--four .cook .man {
+        margin: 10px 0 10px 0;
+    }
+    .footer--one {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        transform: translateX(-27%);
+        font-size: 12px;
+    }
+}
